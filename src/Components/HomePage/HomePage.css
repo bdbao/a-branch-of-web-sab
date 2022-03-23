@@ -1,0 +1,32 @@
+.HomePage__next{
+  display: flex;
+  justify-content:center;
+}
+
+.HomePage_next-mobile{
+  display:none;
+}
+
+.HomePage__next-button{
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  width: 96px; 
+  height: 96px;
+}
+
+.HomePage__next-button:hover{
+  transform: translateY(-5px);
+}
+
+
+/* Mobile */
+@media (max-width: 480px) {
+  .HomePage__next-button{
+    width: 48px;
+    height: 48px;
+  }
+  .HomePage_next-mobile{
+    display: flex;
+    margin-bottom: 48px;
+  }
+}
